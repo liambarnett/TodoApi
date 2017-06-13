@@ -74,7 +74,7 @@ namespace TodoApi.Controllers
             return new NoContentResult();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{id}")] //delete
         public IActionResult Delete(long id)
         {
             var todo = _context.TodoItems.First(t => t.Id == id);
